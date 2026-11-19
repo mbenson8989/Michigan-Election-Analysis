@@ -1,0 +1,39 @@
+MICHIGAN: does any county's 2026 Democratic governor share match its 2024 Harris share?
+(2026 results UNOFFICIAL / uncertified as of Nov 17, 2026)
+
+BOTTOM LINE
+No. No county comes close to matching. Every county's 2026 Democratic share is 1.4 to 9.2 points ABOVE its 2024 Harris share, so no county falls below Harris (0 "floor violations"). The differences are spread out, not stacked on one constant, and they track each county's own lean. That doesn't fit a "match Harris" target. A typical midterm gap between the governor race and the prior presidential race explains it.
+
+THREE WAYS TO MEASURE SHARE (diff = 2026 Benson share minus 2024 Harris share, in percentage points)
+                         Ballots cast   Votes in race   Two-party (D/(D+R))
+Statewide 2026 / 2024    53.95 / 47.96  54.57 / 48.31   55.52 / 49.28
+Exact match (<=0.01)     0              0               0
+Near match (<=0.10)      0              0               0
+Closest county           Ogemaw +1.39   Leelanau +2.70  Leelanau +2.59
+Mean                     +4.70          +4.88           +5.18
+Median                   +4.65          +4.83           +5.24
+Min                      +1.39 Ogemaw   +2.70 Leelanau  +2.59 Leelanau
+Max                      +8.53 Macomb   +9.22 Wayne     +8.80 Macomb
+SD                       1.25           1.17            1.12
+2026 below Harris        0              0               0
+
+With these spreads, about 0.0005 counties would land within 0.01 points of zero by chance. Zero is what we found.
+
+IS THERE A CONSTANT OR TARGET?
+- The differences are a broad band about 6 to 7 points wide, not a spike. The largest gaps are Wayne, Macomb and Marquette, and the smallest are Leelanau, Oscoda and Ottawa.
+- Bigger differences go with higher Harris share (r = +0.35 on ballots, p = 0.001; +0.37 on race votes; +0.20 on two-party, p = 0.07). So the 2026 shift was not one flat number added everywhere.
+- Historical comparison, same kind of pairing (midterm governor vs. the prior presidential race), same counties:
+    2026 minus 2024: SD 1.17 (race votes), 1.12 (two-party), 1.25 (ballots)
+    2022 minus 2020: SD 1.42, 1.52, 1.47
+    2018 minus 2016: SD 1.61, 1.69 (no county ballot totals in hand for 2016/2018)
+  This year's differences are somewhat TIGHTER than history. Compared with 2018-2016 the difference is statistically significant (variance ratio about 0.44 to 0.53, p <= 0.002). Compared with 2022-2020 it is weaker (p = 0.04 on race votes, 0.003 on two-party, 0.07 on ballots).
+  This isn't an artifact of the NBC-estimated counties. The 56 counties with SOS or canvass data show the same tightness (SD 1.15 vs 1.52 in 2022-2020).
+  A tighter spread means the swing was more uniform across counties, around a mean of +4.7 to +5.2 points. Most of that is about the same as the 2022-2020 swing (+4.6 to +5.0). Tight, similar-sized swings are what increasingly nationalized, polarized elections look like. On their own they don't show a target, and they point away from "Harris's number." Morissa can still treat the tighter-than-2018 spread as something to watch, but it isn't a match to 2024.
+
+CAVEATS
+- 2026 county results are unofficial. 27 counties, including Wayne, Oakland and Washtenaw, use NBC News county counts scaled to the official statewide total, so their 2026 shares are estimates. Ottawa uses its county canvass.
+- Data-quality counties: Muskegon (2026 votes exceed ballots), Ogemaw (2026 count looks incomplete; it's the "closest" county on the ballots definition for that reason) and Wexford (ballots exceed governor votes).
+- Sources: 2024 presidential results are official SOS county results; the statewide totals match SOS (Harris 2,736,533; Trump 2,816,636). Ballots are SOS county turnout. 2016, 2018, 2020 and 2022 come from OpenElections files built from SOS results. The statewide checks match the official numbers (Whitmer 2018: 2,266,193; Clinton 2016: 2,268,839).
+- This test checks for a share-matching pattern. It cannot prove or rule out fraud.
+
+Files: Michigan_2026_vs_2024_Exact_Match_Check.csv (sorted by population, all three definitions plus the historical diffs), build_exactmatch.py; stats in /workspace/michigan/output/exact_match_stats.json.
